@@ -1,0 +1,33 @@
+.container
+{
+    width:50%;
+    margin:auto;
+    padding:20px;
+    border:solid 1px black;
+}
+.div2{
+    padding-top:10px;
+}
+.div2 table,tr
+{
+    border:solid 1px black;
+    margin:20px;
+}
+th,td{
+    padding:10px;
+}
+.div1 input:last-child
+{
+    margin-left:200px;
+}
+.active
+{
+    background-color:rgb(0, 183, 255);
+}
+#alertNum,#alertMail
+{
+    color:red;
+}
+.error{
+    color:red;
+}

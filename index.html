@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="div1">
+        <form action="" method="post" id="myform">
+            <label for="">First Name</label>
+            <input type="text" id="fname" placeholder="First name" required><br>
+            <div class="error"></div><br>
+            <label for="">Last Name</label>
+            <input type="text" id="lname" placeholder="Last name" required><br><br>
+            <label for="">Email</label>
+            <input type="email" id="email" placeholder="example@example.com" required>
+            <span id="alertMail"></span><br><br>
+            <label for="">Mobile Number:</label>
+            <input type="text" id="mnum" placeholder="ex:0624513485" pattern="[0-9]{10}" required>
+            <span id="alertNum"></span><br><br>
+            <button id="edit">Add</button>
+            <button type="submit" id="add" onclick="verif(event);">Add</button>
+        </form>
+    </div>
+    <div class="div2">
+        <table>
+            <Caption><h1>Students list</h1></Caption>
+            <thead>
+                <tr><th>Id</th><th>Firstname</th><th>Lastname</th><th>Email</th><th>Number</th><th></th><th></th></tr>
+            </thead>
+            <tbody id="tbl"></tbody>
+        </table>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
